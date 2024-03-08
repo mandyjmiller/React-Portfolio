@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import API from '../utils/API';
-import Card from '../components/Card';
+import Project from '../components/Project';
 import Alert from '../components/Alert';
 
 function ProjectGallery() {
@@ -43,11 +43,11 @@ function ProjectGallery() {
   return (
     <div style={{ textAlign: 'center' }}>
       <h1 className="mt-5">PORTFOLIO</h1>
-      <h3>Thumbs up on any pups you'd like to meet!</h3>
+      <h3>Do you like my work? Give me a thumbs up!</h3>
       {state.showDog ? (
         <>
-          <Card image={state.image} handleBtnClick={handleBtnClick} />
-          <h1>Made friends with {state.matchCount} pups so far!</h1>
+          <Project image={state.image} handleBtnClick={handleBtnClick} />
+          <h1>You liked {state.matchCount} of my projects so far!</h1>
           <Alert style={{ opacity: state.match ? 1 : 0 }} type="success">
             Yay! That Pup Liked You Too!!!
           </Alert>

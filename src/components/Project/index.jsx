@@ -1,9 +1,10 @@
 import React from "react";
-import CardBtn from "../CardBtn";
+import ProjectBtn from "../ProjectBtn";
 import "./style.css";
 
-function Card(props) {
+function Project(props) {
   return (
+
     <div
       className="card"
       style={{
@@ -11,11 +12,11 @@ function Card(props) {
       }}
     >
       {!props.image && <i className="fa fa-spinner fa-spin" aria-hidden="true" />}
-      <CardBtn
+      <ProjectBtn
         onClick={props.handleBtnClick}
         data-value="pass"
       />
-      <CardBtn
+      <ProjectBtn
         onClick={props.handleBtnClick}
         data-value="pick"
       />
@@ -23,4 +24,4 @@ function Card(props) {
   );
 }
 
-export default Card;
+export default Project;
