@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Discover from './pages/Discover';
-import About from './pages/About';
-import Search from './pages/Search';
+// import Discover from './pages/Discover';
+// import About from './pages/About';
+// import Search from './pages/Search';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Wrapper from './components/Wrapper';
@@ -10,9 +10,9 @@ import Wrapper from './components/Wrapper';
 // App - top Level (this one)
 // import Header from './components/Header';
 // import Project from './components/Project'; - to include in ProjectGallery
-// import Home from './pages/Home';
-// import ProjectGallery from './pages/ProjectGallery'; - will include 6 instances of PROJECT
-// import Contact from './pages/Contact';
+import Home from './pages/Home';
+import ProjectGallery from './pages/ProjectGallery'; //- will include 6 instances of PROJECT
+import Contact from './pages/Contact';
 
 
 
@@ -24,10 +24,10 @@ function App() {
         <Navbar />
         <Wrapper>
           <Routes>
-            <Route path="/" element={<About/>} />
-            <Route path="/about" element={<About/>} />
-            <Route path="/discover" element={<Discover/>} />
-            <Route path="/search" element={<Search/>} />
+            <Route path="/" element={<Home/>} />
+            <Route path="/index" element={<Home/>} />
+            <Route path="/portfolio" element={<ProjectGallery/>} />
+            <Route path="/contact" element={<Contact/>} />
           </Routes>
         </Wrapper>
         <Footer />

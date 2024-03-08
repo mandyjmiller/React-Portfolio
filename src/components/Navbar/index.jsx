@@ -8,7 +8,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <Link className="navbar-brand" to="/">
-          Pupster
+          Mandy Miller : : : Web Dev
         </Link>
         <button
           class="navbar-toggler"
@@ -31,27 +31,27 @@ function Navbar() {
                   isActive ? 'nav-link active' : 'nav-link'
                 }
               >
-                About
+                Home
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
-                to="/discover"
+                to="/portfolio"
                 className={({ isActive }) =>
                   isActive ? 'nav-link active' : 'nav-link'
                 }
               >
-                Discover
+                Portfolio
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
-                to="/search"
+                to="/contact"
                 className={({ isActive }) =>
                   isActive ? 'nav-link active' : 'nav-link'
                 }
               >
-                Search
+                Contact
               </NavLink>
             </li>
           </ul>
