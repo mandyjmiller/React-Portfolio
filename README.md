@@ -1,129 +1,81 @@
-# Challenge 13: React Portfolio
+# React Portfolio
+<a href = https://choosealicense.com/licenses/mit/> ![License Badge](https://img.shields.io/badge/License-MIT-yellow.svg)</a> <br>
 
-For this challenge, you will utilize what you have learned in `Module 13: React` to develop the initial scaffolding of your portfolio sites.
+The objective of this challenge is to use React to develop the initial structure of a portfolio website in order to demonstrates proficiency in modern technologiesand enhance the portfolio's appeal to potential employers.
 
-Now that you've worked with React and have multiple projects to share, it's time to develop the initial scaffolding for your first portfolio site as well as create and/or update other materials so that you can showcase your skills to potential employers. Creating a portfolio using React will help set you apart from other developers whose portfolios do not use some of the latest technologies.
+Design Guidelines:
 
-## Instructions
+Mobile-first design approach.
+Custom color palette for a polished and professional look.
+Legible font size and eye-friendly colors.
+Base Requirements:
 
-* Students must fullfil the requirements listed in the following sections:
+Technologies:
 
-### Design
+React
+Navigation using React Router or alternative third-party router.
+Portfolio Content:
 
-Remember, "good" design is subjective. Your site should look "polished" and "professional". Here are a few guidelines on what that means:
+Name
+Links to:
+GitHub Profile
+LinkedIn Page
+Email Address
+Optional: Phone Number
+PDF version of the resume, featuring up-to-date projects and professional experience.
 
-* Mobile-first design
 
-* Choose a color palette for your site so it doesn't just look like the default bootstrap theme or an unstyled HTML site.
 
-* Make sure the font size is large enough to read and that the colors don't cause eye strain.
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
-### Base Requirements
+## Installation
 
-* Technologies that must be used:
-  * [ ] React
-  * [ ] Navigation with `React Router`, dynamic rendering, or another third part router
-* Your portfolio **must contain** the following information:
-  * [ ] Your name
-  * [ ] Links to your:
-    * [ ] GitHub Profile
-    * [ ] LinkedIn Page
-    * [ ] Email Address
-    * [ ] Phone Number - (optional)
-    * [ ] PDF version of your resume
-      * Your resume **must** contain up-to-date projects and professional experience
-    * [ ] A list of projects (Challenges or Projects). For each project, make sure you have the following:
-      * [ ] Project title
-      * [ ] Link to the deployed version
-      * [ ] Link to the GitHub repository
-      * [ ] GIF or screenshot of the deployed application
+As a website user, there are no installation requirements. The Web page can be viewed using most web browsers such as Chrome, Microsoft Edge, Firefox, Safari etc.
 
-### Required Components
+As a developer, there are some additional installation steps:
 
-* At a minium, your portfolio must render these 6 components:
-  1. [ ] App
-  2. [ ] Header
-  4. [ ] Home
-  5. [ ] Project Gallery
-  6. [ ] Project
-  7. [ ] Contact
+generate a starter React app using Vite. You can do this by running `npm create vite@latest wheelz -- --template react`. .
 
-### Required Component Content
+* Once you have a `wheelz ` React app generated, cd into your application's directory and run `npm install` to install the base dependencies.
 
-* [ ] App:
-  * [ ] Must be your top level component and render all necessary children components
-* [ ] Header:
-  * [ ] Must be rendered across the entire site
-  * [ ] Must Contain a Navbar
-* [ ] Project Gallery:
-  * [ ] Must render dynamically 6 instances of the Project component
-    * [ ] Be sure to store your project data in a JSON file and import it into your project
-* [ ] Project:
-  * [ ] Must be a reusable component that ingests JSON data as a props and renders a single instance for each project.
-  * [ ] Must utilize router props to properly render the right project based on user selection
-  * [ ] Must render the following info:
-    * [ ] Project title
-    * [ ] Link to the deployed version
-    * [ ] Link to the GitHub repository
-    * [ ] GIF or screenshot of the deployed application
-* [ ] Contact:
-  * [ ] Must have contact information
-  * [ ] Have a contact form for handling events
-* [ ] Home:
-  * This should be a welcome landing page that contains:
-    * [ ] Your Name
-    * [ ] A Headshot of you
-    * [ ] Your brand statement
-    * [ ] Some indication that this is your portfolio site
+* Once everything has been installed, delete the `src` folder inside of your starter app and replace it with the [src] provided with this project
 
-### Updated Social Media Presence
+* Start the app by running `npm run dev` in your terminal and then take a moment to study the HTML code being rendered in the browser at [http://localhost:5173](http://localhost:5173).
 
-#### LinkedIn
+Ensure Bootstrap and other paackages are installed using the following:
 
-* Make sure to update your LinkedIn Profile with the new skills you've acquired since the last time it was updated.
-* If you do not have a LinkedIn profile, please create one.
+* npm i --save bootstrap @popperjs/core
 
-#### GitHub
+* npm install --save react-fontawesome
 
-* Update GitHub profile with pinned repositories featuring those same projects.
+## Usage
+Uses node.js and the [Inquirer package](https://www.npmjs.com/package/inquirer).
 
-## Grading
+![screenshot](assets/screenshot.png)</a>
 
-This challenge is assessed on the following criteria:
 
-### Technical Acceptance Criteria: 40%
+## License
+<a href = https://choosealicense.com/licenses/mit/> ![License Badge](https://img.shields.io/badge/License-MIT-yellow.svg)</a> <br>
+Developed under the MIT license.<br><br>
+For more information please view the <a href = https://choosealicense.com/licenses/mit/> MIT license description </a> .
 
-* Satisfies all of the above acceptance criteria
 
-### Deployment: 32%
+## Contributing
+This was created by Mandy Miller. Please feel free to reach out if you have further contribtions by using the contact details in Questions section below
 
-* Application deployed at live URL (if applicable).
+## Tests
+This was QA'd for functionality by running tests of the application in VS Code and checking the resulting output README.md file
 
-* Application loads with no errors.
+## Questions
 
-* Application GitHub URL submitted (if applicable).
+For further infomation, please follow me on GitHub: <a href =https://github.com/mandyjmiller>https://github.com/mandyjmiller</a><br>
+or contact me via email at mandy@cullenmiller.com
 
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* User experience is intuitive and easy to navigate.
-
-* User interface style is clean and polished.
-
-* Application uses a color scheme other than the default Bootstrap color palette.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+THANK YOU!
+© 2024 Mandy Miller
