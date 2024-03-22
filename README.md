@@ -1,19 +1,19 @@
 # React Portfolio
 <a href = https://choosealicense.com/licenses/mit/> ![License Badge](https://img.shields.io/badge/License-MIT-yellow.svg)</a> <br>
 
-The objective of this challenge is to use React to develop the initial structure of a portfolio website in order to demonstrates proficiency in modern technologiesand enhance the portfolio's appeal to potential employers.
+This site used React to develop the initial structure of a portfolio website in order to demonstrates proficiency in modern technologiesand enhance the portfolio's appeal to potential employers.
 
 Design Guidelines:
 
 Mobile-first design approach.
 Custom color palette for a polished and professional look.
 Legible font size and eye-friendly colors.
-Base Requirements:
 
 Technologies:
 
 React
 Navigation using React Router or alternative third-party router.
+
 Portfolio Content:
 
 Name
@@ -21,10 +21,7 @@ Links to:
 GitHub Profile
 LinkedIn Page
 Email Address
-Optional: Phone Number
 PDF version of the resume, featuring up-to-date projects and professional experience.
-
-
 
 ## Table of Contents
 - [Installation](#installation)
