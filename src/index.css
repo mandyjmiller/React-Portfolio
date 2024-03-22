@@ -11,3 +11,12 @@ div[data-reactroot] {
   padding: 0;
   margin: 0;
 }
+
+/* Keeping ALL the CSS for all component here so it can be reused */
+
+.contact-form {
+  background-color: rgb(211, 211, 211);
+  height: 100%;
+  padding: 50px;
+  margin: 100px;
+}

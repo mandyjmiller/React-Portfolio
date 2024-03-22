@@ -1,4 +1,4 @@
-.card {
+/* .card {
   background-size: cover;
   background-position: center;
   background-clip: content-box;
@@ -9,7 +9,46 @@
   position: relative;
   margin: 0 auto;
   margin-top: 30px;
+} */
+
+.project-card {
+  font-size: medium;
+  background-size: cover;
+  background-position: center;
+  background-clip: content-box;
+  background-color: rgb(211, 211, 211);
+  border: 3px solid rgb(131, 61, 61);
+  border-radius: 15px;
+  min-height: 300px;
+  width: 320px;
+  box-shadow: 0 3px 6px rgba(91, 27, 27, 0.978),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+  position: relative;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: rgb(19, 19, 19);
+  /* padding: 10px; */
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box; /* Include padding and border in total width and height */
 }
+
+.project-card > * {
+  padding: 10px; /* Apply padding to child elements */
+}
+.project-card img {
+  width: 100%; /* Set the width to 100% of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 200px; /* Limit the maximum height */
+}
+
+.project-card:hover {
+  cursor:pointer;
+  transform: scale(1.03);
+  box-shadow: rgb(222, 98, 98)
+}
+
+
 
 .card .fa-spinner {
   font-size: 180px;
@@ -17,3 +56,4 @@
   left: 25%;
   top: 25%;
 }
+

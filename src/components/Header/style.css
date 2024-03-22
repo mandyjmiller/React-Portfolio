@@ -1,3 +1,53 @@
 nav.navbar.navbar-default {
   margin-bottom: 50;
+  display: flex;
+  /* position:fixed; */
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  top: 0;
+}
+
+/* CUSTOM CSS */
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* z-index: 1000; Adjust as needed to ensure the header appears above other content */
+}
+
+
+.active {
+  background-color: grey;
+}
+
+
+nav .title {
+  font-size: 2.5rem;
+  margin: 1rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+}
+
+nav ul li a:hover {
+  background-color: rgb(144, 148, 148);
 }

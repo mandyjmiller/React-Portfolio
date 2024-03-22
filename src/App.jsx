@@ -1,18 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Wrapper from './components/Wrapper';
-//Required Components 
-// App - top Level (this one)
 import Header from './components/Header';
-// import Project from './components/Project'; - to include in ProjectGallery
 import Home from './pages/Home';
-import ProjectGallery from './pages/ProjectGallery'; //- will include 6 instances of PROJECT
+import ProjectDetail from './pages/ProjectDetail';
 import Contact from './pages/Contact';
-
-
-
+// import ProjectLibrary from './ProjectLibrary';
+import projects from './assets/projects.json';
 
 function App() {
   return (
@@ -21,10 +16,11 @@ function App() {
         <Header />
         <Wrapper>
           <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/index" element={<Home/>} />
-            <Route path="/portfolio" element={<ProjectGallery/>} />
-            <Route path="/contact" element={<Contact/>} />
+            <Route path="/" element={<Home />} />
+            <Route path="/index" element={<Home />} />
+            {/* Route for individual project detail page */}
+            <Route path="/projects/:projectId" element={<ProjectDetail projects={projects} />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </Wrapper>
         <Footer />
@@ -32,28 +28,5 @@ function App() {
     </Router>
   );
 }
-
-
-//VERSION OF THE ABOVE WITH MY PORTFOLIO HEADINGS
-// function App() {
-//   return (
-//     <Router>
-//       <div>
-//         <Navbar />
-//         <Wrapper>
-//           <Routes>
-//             <Route path="/" element={<Home/>} />
-//             <Route path="/about" element={<ProjectGallery/>} />
-//             <Route path="/search" element={<Contact/>} />
-//           </Routes>
-//         </Wrapper>
-//         <Footer />
-//       </div>
-//     </Router>
-//   );
-// }
-
-
-
 
 export default App;

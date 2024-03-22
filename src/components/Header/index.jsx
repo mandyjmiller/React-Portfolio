@@ -5,10 +5,12 @@ import './style.css';
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+
+
       <div class="container-fluid">
         <Link className="navbar-brand" to="/">
-          Mandy Miller ::: Dev
+          Mandy Miller ::: Front End Dev
         </Link>
         <button
           class="navbar-toggler"
@@ -34,16 +36,16 @@ function Header() {
                 Home
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink
                 to="/portfolio"
                 className={({ isActive }) =>
                   isActive ? 'nav-link active' : 'nav-link'
                 }
               >
-                Project Gallery
+                Porfolio
               </NavLink>
-            </li>
+            </li> */}
             <li className="nav-item">
               <NavLink
                 to="/contact"
@@ -51,7 +53,7 @@ function Header() {
                   isActive ? 'nav-link active' : 'nav-link'
                 }
               >
-                Contact
+                Get in Touch
               </NavLink>
             </li>
           </ul>
