@@ -25,7 +25,6 @@ PDF version of the resume, featuring up-to-date projects and professional experi
 
 ## Table of Contents
 - [Installation](#installation)
-- [Usage](#usage)
 - [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
@@ -50,11 +49,6 @@ Ensure Bootstrap and other paackages are installed using the following:
 * npm i --save bootstrap @popperjs/core
 
 * npm install --save react-fontawesome
-
-## Usage
-Uses node.js and the [Inquirer package](https://www.npmjs.com/package/inquirer).
-
-![screenshot](assets/screenshot.png)</a>
 
 
 ## License
